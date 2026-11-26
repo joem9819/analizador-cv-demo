@@ -1,0 +1,17 @@
+Desarrollador(a) de software júnior — Empresa Ejemplo de Pruebas S.A.S. (oferta ficticia)
+
+Buscamos una persona para el equipo de aplicaciones web internas.
+
+Requisitos:
+- Programación en Python.
+- Bases de datos relacionales y SQL.
+- Control de versiones con Git.
+- Construcción de servicios REST.
+- Experiencia mínima de 1 año en desarrollo de software.
+
+Deseable:
+- Docker.
+- Pruebas unitarias con pytest.
+
+Ofrecemos:
+- Contrato a término indefinido y horario flexible.

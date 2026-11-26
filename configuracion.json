@@ -1,0 +1,130 @@
+{
+  "version_configuracion": "1.0",
+  "descripcion": "Configuración versionada del prototipo «Analizador CV». La app usa un solo modelo de lenguaje, Gemini 3.5 Flash-Lite por su API (decisión del estudiante del 20/10/2026); sin modelo, funciona en modo demostración con la línea base por palabras clave. Los parámetros que acepta la API se negocian y se guardan con «python -m analizador_cv prueba-conexion» (datos/congelados/gemini_flash_lite.json).",
+  "perfil_predeterminado": "gemini_flash_lite",
+  "generacion": {
+    "temperature": 0.2,
+    "semilla": 20261019
+  },
+  "perfiles": {
+    "gemini_flash_lite": {
+      "tipo": "openai_compatible",
+      "descripcion": "Google · gemini-3.5-flash-lite por el endpoint compatible con OpenAI. Plan gratuito.",
+      "proveedor": "Google",
+      "url": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "modelo": "gemini-3.5-flash-lite",
+      "variable_clave": "GEMINI_API_KEY",
+      "url_claves": "https://aistudio.google.com/apikey",
+      "tiempo_espera_s": 120,
+      "temperature": null,
+      "nota_temperatura": "No se envía: según la guía de Gemini 3.6 Flash y 3.5 Flash-Lite (actualizada el 13/10/2026), temperature, top_p y top_k están obsoletos y la API los ignora.",
+      "parametros": {
+        "max_completion_tokens": 4096,
+        "reasoning_effort": "minimal"
+      },
+      "enviar_semilla": true,
+      "salida_estructurada": "json_schema_estricto",
+      "parametros_opcionales": ["seed", "reasoning_effort"],
+      "limites": {
+        "rpm": null,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null,
+        "fuente": "Completar con los valores de https://aistudio.google.com/rate-limit (no se publican en la documentación)."
+      },
+      "espaciado_minimo_s": 6.0,
+      "espera_maxima_429_s": 300,
+      "aviso_privacidad": "Plan gratuito de la API de Gemini: Google puede usar el contenido enviado para mejorar sus productos y puede haber revisión humana. Úselo con hojas de vida ficticias o con el enmascaramiento de datos personales activado; si no quiere que el texto salga de este computador, use el modo demostración."
+    }
+  },
+  "reintentos": {
+    "max_reintentos": 2
+  },
+  "analisis": {
+    "fecha_referencia": null,
+    "nota": "Mes (AAAA-MM) con que se calculan la recencia y los periodos que siguen vigentes («actual»). null = el mes en curso. La evaluación técnica (Etapa 8) lo fija para que los resultados sean reproducibles. La rúbrica, el diccionario de habilidades (datos/habilidades.json) y los prompts (datos/plantillas/) quedan registrados con su huella en cada análisis."
+  },
+  "documentos": {
+    "tamano_maximo_mb": 5,
+    "minimo_caracteres": 200,
+    "caracteres_aviso_extension": 20000
+  },
+  "ofertas": {
+    "tiempo_espera_s": 15,
+    "tamano_maximo_mb": 3,
+    "max_redirecciones": 5,
+    "minimo_caracteres": 300,
+    "nota": "Decisión del 19/10/2026 (definición del proyecto, sección 5.3): la app no descarga páginas de los portales de esta lista porque sus términos prohíben el acceso automatizado; pide pegar la descripción. En los demás sitios hace una sola petición por acción del usuario y respeta robots.txt. El 20/10/2026, al armar la lista de la medición P4, se agregaron las plataformas de empleo cuyos términos también lo prohíben.",
+    "portales_prohibidos": [
+      {
+        "nombre": "LinkedIn",
+        "dominios": ["linkedin.com", "lnkd.in"],
+        "documento": "User Agreement, §8.2",
+        "url_terminos": "https://www.linkedin.com/legal/user-agreement",
+        "fecha_verificacion": "2026-10-19"
+      },
+      {
+        "nombre": "Computrabajo",
+        "dominios": ["computrabajo.com"],
+        "documento": "Aviso legal (actualizado el 14/10/2026)",
+        "url_terminos": "https://co.computrabajo.com/avisolegal/",
+        "fecha_verificacion": "2026-10-19"
+      },
+      {
+        "nombre": "Magneto",
+        "dominios": ["magneto365.com", "magnetoglobal.com", "knowledge-365.com", "tmt-365.com", "potential-365.com"],
+        "documento": "Términos y condiciones, §7",
+        "url_terminos": "https://www.magneto365.com/co/politicas/terminos-condiciones-uso-plataforma-magneto",
+        "fecha_verificacion": "2026-10-19"
+      },
+      {
+        "nombre": "SmartRecruiters",
+        "dominios": ["smartrecruiters.com"],
+        "documento": "Candidate Terms of Use (14/5/2019)",
+        "url_terminos": "https://www.smartrecruiters.com/legal/terms-of-use/",
+        "fecha_verificacion": "2026-10-20"
+      },
+      {
+        "nombre": "BambooHR",
+        "dominios": ["bamboohr.com"],
+        "documento": "Terms of Service (18/9/2026)",
+        "url_terminos": "https://www.bamboohr.com/legal/terms-of-service",
+        "fecha_verificacion": "2026-10-20"
+      },
+      {
+        "nombre": "Breezy HR",
+        "dominios": ["breezy.hr"],
+        "documento": "Terms of Service, (ix) (10/8/2026)",
+        "url_terminos": "https://breezy.hr/policies/terms",
+        "fecha_verificacion": "2026-10-20"
+      },
+      {
+        "nombre": "Workday",
+        "dominios": ["myworkdayjobs.com"],
+        "documento": "Site Terms (13/8/2026); se aplican por precaución a sus páginas de empleo",
+        "url_terminos": "https://www.workday.com/en-us/legal/site-terms.html",
+        "fecha_verificacion": "2026-10-20"
+      },
+      {
+        "nombre": "Amazon Jobs",
+        "dominios": ["amazon.jobs"],
+        "documento": "Conditions of Use (14/8/2026)",
+        "url_terminos": "https://www.amazon.com/gp/help/customer/display.html?nodeId=508088",
+        "fecha_verificacion": "2026-10-20"
+      },
+      {
+        "nombre": "Citi Careers",
+        "dominios": ["jobs.citi.com"],
+        "documento": "Terms of Use de Citigroup",
+        "url_terminos": "https://www.citigroup.com/global/terms",
+        "fecha_verificacion": "2026-10-20"
+      }
+    ]
+  },
+  "rutas": {
+    "base_datos": "datos/analizador_cv.sqlite",
+    "resultados": "resultados",
+    "plantillas": "datos/plantillas",
+    "respaldos": "datos/respaldos"
+  }
+}

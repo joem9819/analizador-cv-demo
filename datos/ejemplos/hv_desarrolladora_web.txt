@@ -1,0 +1,32 @@
+María Ficticia Ejemplo
+Correo: maria.ficticia@correo.example | Celular: +57 300 555 0101 | Medellín
+Hoja de vida ficticia: ejemplo del prototipo Analizador CV
+
+PERFIL PROFESIONAL
+Desarrolladora de software júnior con experiencia en aplicaciones web con Python y Django. Interés en pruebas automatizadas y buenas prácticas de código.
+
+EXPERIENCIA LABORAL
+Analista de desarrollo júnior — Empresa Ficticia de Software S.A.S.
+Febrero de 2024 – actualidad
+- Desarrollé módulos en Django para la gestión de citas médicas.
+- Construí servicios REST consumidos por una aplicación móvil.
+- Reduje en 30 % el tiempo de respuesta de los reportes optimizando consultas SQL en PostgreSQL.
+
+Practicante de desarrollo de software — Comercio Inventado Ltda.
+Julio de 2023 – diciembre de 2023
+- Corregí errores en formularios web con JavaScript, HTML y CSS.
+- Apoyo en la integracion de una pasarela de pagos mediante una API REST.
+
+PROYECTOS
+Sistema de préstamo de libros (2023)
+- Aplicación web con Flask y PostgreSQL que el personal de la biblioteca usó durante un semestre.
+
+FORMACIÓN ACADÉMICA
+Ingeniería de Sistemas — Universidad Imaginaria (en curso, noveno semestre)
+Curso de pruebas automatizadas con pytest (40 horas), 2024
+
+HABILIDADES
+Python, Django, Flask, JavaScript, HTML, CSS, SQL, PostgreSQL, Git, pytest, trabajo en equipo
+
+IDIOMAS
+Inglés B1

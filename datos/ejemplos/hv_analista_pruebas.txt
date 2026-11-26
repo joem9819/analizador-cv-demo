@@ -1,0 +1,43 @@
+Andrés Inventado Prueba
+Analista de pruebas de software · hoja de vida ficticia: ejemplo del prototipo Analizador CV
+Correo: andres.inventado@correo.example | Teléfono: +57 310 555 0202 | Bogotá
+
+HABILIDADES
+Pruebas funcionales
+Pruebas de API
+Selenium y Java
+Cypress
+Postman
+SQL
+Jira y TestRail
+Git
+Scrum
+Atención al detalle
+Comunicación
+
+IDIOMAS
+Inglés B2
+
+PERFIL
+Analista de pruebas con dos años de experiencia en pruebas funcionales y de API para aplicaciones web y móviles. Diseño casos de prueba a partir de historias de usuario y reporto defectos con evidencia clara.
+
+EXPERIENCIA
+Analista de pruebas júnior — Consultora Imaginaria de Calidad S.A.S.
+Marzo de 2025 – actualidad
+- Diseñé 180 casos de prueba funcionales para el módulo de pagos.
+- Automaticé 45 pruebas de regresión con Selenium y Java en Jenkins.
+- Probé servicios REST con Postman y validé las respuestas en JSON.
+- Reporté defectos en Jira y les di seguimiento en un equipo Scrum.
+
+Auxiliar de pruebas — Tienda Virtual Ficticia Ltda.
+Agosto de 2024 – febrero de 2025
+- Ejecuté pruebas manuales de la tienda en línea en varios navegadores.
+- Documenté los casos de prueba en TestRail.
+
+PROYECTOS
+Automatización de pruebas de una tienda de demostración (2024)
+- Pruebas de extremo a extremo con Cypress para el flujo de compra.
+
+FORMACIÓN
+Tecnología en Desarrollo de Software — Instituto Universitario Inventado, 2024
+Curso de automatización de pruebas con Selenium (60 horas), 2025

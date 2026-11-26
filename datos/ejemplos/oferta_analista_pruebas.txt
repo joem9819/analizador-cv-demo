@@ -1,0 +1,18 @@
+Analista de pruebas (QA) júnior — Empresa Ejemplo de Calidad S.A.S. (oferta ficticia)
+
+Buscamos una persona para probar nuestras aplicaciones web y móviles.
+
+Requisitos:
+- Diseño y ejecución de casos de prueba funcionales.
+- Pruebas de API con Postman.
+- Automatización de pruebas con Selenium o Cypress.
+- Consultas SQL para validar datos.
+- Experiencia mínima de 2 años en pruebas de software.
+
+Deseable:
+- Pruebas de rendimiento con JMeter.
+- Integración continua con GitHub Actions.
+- Inglés intermedio.
+
+Ofrecemos:
+- Trabajo híbrido y plan de formación.

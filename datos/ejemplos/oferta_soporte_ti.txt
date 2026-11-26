@@ -1,0 +1,18 @@
+Técnico(a) de soporte TI — Empresa Ejemplo de Servicios S.A.S. (oferta ficticia)
+
+Funciones: atender la mesa de ayuda, resolver las incidencias de los usuarios y mantener los equipos de la oficina.
+
+Requisitos:
+- Soporte técnico a usuarios en Windows 10 y Windows 11.
+- Gestión de tickets en una mesa de ayuda.
+- Conocimientos de redes de computadores (TCP/IP, DHCP y DNS).
+- Manejo de Office 365.
+- Experiencia mínima de 1 año en soporte técnico.
+
+Deseable:
+- Active Directory.
+- Conocimientos de ITIL.
+- Inglés básico.
+
+Ofrecemos:
+- Contrato a término fijo con posibilidad de renovación.

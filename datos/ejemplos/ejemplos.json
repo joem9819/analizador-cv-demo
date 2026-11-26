@@ -1,0 +1,29 @@
+{
+  "descripcion": "Hojas de vida y ofertas FICTICIAS para probar la app (modo demostración y recorrido de la Etapa 7). No corresponden a personas ni empresas reales y no forman parte del corpus de la evaluación técnica (Etapa 8). El TXT es la fuente; el DOCX y el PDF se generan con herramientas/generar_ejemplos.py.",
+  "hojas_de_vida": [
+    {
+      "id": "desarrolladora_web",
+      "titulo": "Desarrolladora web júnior",
+      "descripcion": "Una columna, con logros cuantificados y fechas completas.",
+      "fuente": "hv_desarrolladora_web.txt",
+      "columnas": null,
+      "oferta": "oferta_desarrollo_web.txt"
+    },
+    {
+      "id": "analista_pruebas",
+      "titulo": "Analista de pruebas (QA)",
+      "descripcion": "Diseño a dos columnas en el DOCX y el PDF (habilidades e idiomas a la izquierda).",
+      "fuente": "hv_analista_pruebas.txt",
+      "columnas": {"izquierda": ["HABILIDADES", "IDIOMAS"]},
+      "oferta": "oferta_analista_pruebas.txt"
+    },
+    {
+      "id": "soporte_ti",
+      "titulo": "Técnica de soporte TI (hoja de vida débil)",
+      "descripcion": "Sin perfil ni idiomas, con fechas incompletas, sin cifras y con palabras sin tilde.",
+      "fuente": "hv_soporte_ti.txt",
+      "columnas": null,
+      "oferta": "oferta_soporte_ti.txt"
+    }
+  ]
+}

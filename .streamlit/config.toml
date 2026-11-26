@@ -1,0 +1,98 @@
+# Configuración local de Streamlit para la app del prototipo («python -m analizador_cv app»).
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true
+# MB: el mismo máximo de documentos.tamano_maximo_mb en configuracion.json
+maxUploadSize = 5
+# Sirve analizador_cv/static/ (las fuentes de la interfaz): la app no las pide a ningún servicio externo.
+enableStaticServing = true
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+# Tema claro fijo, de estilo editorial: crema de fondo, carbón para el texto, verde petróleo en los encabezados y
+# los controles, coral en los botones principales (CSS de app.py) y lavanda en los acentos discretos.
+# Los controles usan el petróleo porque el coral no llega a 3:1 sobre el crema; los gráficos (interfaz/graficos.py)
+# usan tonos de la misma paleta validados para ese fondo.
+base = "light"
+primaryColor = "#0e7c7b"
+backgroundColor = "#fff7ec"
+secondaryBackgroundColor = "#fffcf7"
+textColor = "#24212b"
+linkColor = "#0b6463"
+linkUnderline = true
+borderColor = "#e6d9c6"
+showWidgetBorder = true
+dataframeBorderColor = "#ece1d1"
+dataframeHeaderBackgroundColor = "#f6ecde"
+dataframeHeaderTextColor = "#24212b"
+codeBackgroundColor = "#f8efe2"
+baseRadius = "4px"
+buttonRadius = "2px"
+font = "Instrument Sans, sans-serif"
+headingFont = "Instrument Serif, serif"
+# Instrument Serif tiene un solo peso: los títulos van en 400 (sin negrita sintética).
+headingFontWeights = [400, 400, 400, 400, 400, 400]
+headingFontSizes = ["2.75rem", "2.25rem", "1.85rem", "1.5rem", "1.25rem", "1rem"]
+metricValueFontWeight = 400
+showSidebarBorder = true
+# Colores de estado (avisos, :green[✔]/:red[✖], diferencias de st.metric y etiquetas) en tonos de la paleta.
+# Los textos de estado tienen contraste de 4,5:1 o más sobre su fondo.
+greenColor = "#0e7c7b"
+greenTextColor = "#0b5e5d"
+greenBackgroundColor = "#e3f0ec"
+redColor = "#c8462c"
+redTextColor = "#952f1a"
+redBackgroundColor = "#ffe7df"
+yellowColor = "#c98a1b"
+yellowTextColor = "#6e4b0b"
+yellowBackgroundColor = "#fbefd8"
+orangeColor = "#e4583b"
+orangeTextColor = "#8f3418"
+orangeBackgroundColor = "#ffe9df"
+blueColor = "#3a6a96"
+blueTextColor = "#244d73"
+blueBackgroundColor = "#e6eef5"
+violetColor = "#7b62c9"
+violetTextColor = "#4f3a99"
+violetBackgroundColor = "#efe8ff"
+grayColor = "#857e8c"
+grayTextColor = "#5c5664"
+grayBackgroundColor = "#f1e9de"
+
+[[theme.fontFaces]]
+family = "Instrument Sans"
+url = "app/static/fuentes/instrument-sans-latin.woff2"
+weight = "400 700"
+style = "normal"
+
+[[theme.fontFaces]]
+family = "Instrument Sans"
+url = "app/static/fuentes/instrument-sans-italic-latin.woff2"
+weight = "400 700"
+style = "italic"
+
+[[theme.fontFaces]]
+family = "Instrument Serif"
+url = "app/static/fuentes/instrument-serif-latin.woff2"
+weight = "400"
+style = "normal"
+
+[[theme.fontFaces]]
+family = "Instrument Serif"
+url = "app/static/fuentes/instrument-serif-italic-latin.woff2"
+weight = "400"
+style = "italic"
+
+[theme.sidebar]
+# Barra lateral en un crema un poco más hondo, separada por una línea fina.
+primaryColor = "#0e7c7b"
+backgroundColor = "#f8eddf"
+secondaryBackgroundColor = "#fffaf3"
+textColor = "#24212b"
+linkColor = "#0b6463"
+borderColor = "#e6d9c6"
+headingFontSizes = ["1.5rem", "1.35rem", "1.2rem", "1.05rem", "0.95rem", "0.85rem"]
